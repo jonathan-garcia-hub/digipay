@@ -97,7 +97,7 @@ class _TransactionsDetailScreenState extends State<TransactionsDetailScreen> {
                     child: Column(
                       children: [
                         Text(
-                          'Lote ${widget.lote}',
+                          'Lote abierto: ${widget.lote.toString().padLeft(3, '0')}',
                           style: TextStyle(fontSize: 20, color: ThemeConfig.secondaryColor, fontWeight: FontWeight.bold),
                         ),
                         Row(

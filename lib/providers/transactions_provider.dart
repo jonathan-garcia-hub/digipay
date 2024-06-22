@@ -117,7 +117,7 @@ class TransactionsProvider extends ChangeNotifier {
 
         }else{
           //No tiene entonces las guardo
-          // _auth.enableBiometricAuth(username, password);
+          _auth.enableBiometricAuth(username, password);
           print('guardadas');
         }
 

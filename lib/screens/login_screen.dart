@@ -31,6 +31,8 @@ class _LoginScreenState extends State<LoginScreen> {
         setState(() {
           setState(() {
             _showFingerButtom = value && value2;
+            print(value);
+            print(value2);
             print(_showFingerButtom);
           });
         });

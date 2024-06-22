@@ -27,6 +27,7 @@ class BiometricAuthUtil {
     final String savedPassword =
         await getValueFromSecureStorage(passwordKey) ?? '';
 
+    // print(savedUsername+savedPassword);
     final bool isEnableBiometric =
         savedUsername.isNotEmpty && savedPassword.isNotEmpty;
     return isEnableBiometric;

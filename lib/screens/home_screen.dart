@@ -244,7 +244,7 @@ class _MerchantExpansionTileState extends State<MerchantExpansionTile> {
                       text: TextSpan(
                         children: [
                           TextSpan(
-                            text: 'Dispositivo: ',
+                            text: 'Terminal: ',
                             style: TextStyle(
                               fontSize:16,
                               color: ThemeConfig.primaryColor,
@@ -252,7 +252,7 @@ class _MerchantExpansionTileState extends State<MerchantExpansionTile> {
                             ),
                           ),
                           TextSpan(
-                            text: afiliation.serial,
+                            text: '${afiliation.terminal} - Lote: ${afiliation.lotNumber}',
                             style: TextStyle(
                               fontSize:16,
                               color: Colors.black,
@@ -293,14 +293,14 @@ class _MerchantExpansionTileState extends State<MerchantExpansionTile> {
                                 text: TextSpan(
                                   children: [
                                     TextSpan(
-                                      text: 'Terminal: ',
+                                      text: 'Serial: ',
                                       style: TextStyle(
                                         color: Colors.black,
                                         fontWeight: FontWeight.bold,
                                       ),
                                     ),
                                     TextSpan(
-                                      text: '${afiliation.terminal} - Lote: ${afiliation.lotNumber}',
+                                      text: afiliation.serial,
                                       style: TextStyle(
                                         color: Colors.black,
                                       ),
